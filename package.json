@@ -4,13 +4,15 @@
   "scripts": {
     "dev": "vite",
     "build": "vite build",
-    "preview": "vite preview"
+    "deploy": "gh-pages -d dist",
+    "preview": "npm run build && vite preview --port 3001"
   },
   "devDependencies": {
     "vite": "^2.7.2",
     "vite-plugin-string": "^1.1.1"
   },
   "dependencies": {
+    "gh-pages": "^3.2.3",
     "gsap": "^3.9.1",
     "three": "^0.136.0"
   }
